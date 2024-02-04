@@ -4,6 +4,7 @@
 <nav>
   <h1>Flaskr</h1>
   <ul>
+    <!-- g is auto set; g.user is the logged in user -->
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
